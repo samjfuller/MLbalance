@@ -1,5 +1,7 @@
 
-# MLbalance (alpha version) <a href='https://github.com/CetiAlphaFive/MLbalance/blob/master/man/figures/mlbalance_sticker.png'><img src='man/figures/mlbalance_sticker.png' align="right" height="139" /></a>
+# MLbalance (alpha version)
+
+<img src="https://github.com/samjfuller/MLbalance/blob/master/man/figures/mlbalance_sticker.png" width="25%" />
 
 MLbalance implements a novel machine learning balance test, the balance
 permutation test, for experiments with binary, multiarm, and continuous
@@ -9,6 +11,18 @@ Rametta and Fuller (2023). This package is in alpha, any recommendations
 or comments welcome in the issues section.
 
 ## Installation
+
+Stable version is be available on Github here:
+
+``` r
+devtools::install_github("samjfuller/MLbalance)
+# OR 
+# install.packages("remotes)
+remotes::install_github("samjfuller/MLbalance")
+# OR 
+# install.packages("pak")
+pak::pak("samjfuller/MLbalance")
+```
 
 You can install the development version of MLbalance from
 [GitHub](https://github.com/CetiAlphaFive/MLbalance) with:
@@ -22,13 +36,6 @@ remotes::install_github("CetiAlphaFive/MLbalance")
 # OR 
 # install.packages("pak")
 pak::pak("CetiAlphaFive/MLbalance")
-```
-
-Future stable versions will be available on CRAN and also on Github
-here:
-
-``` r
-devtools::install_github("samjfuller/MLbalance)
 ```
 
 ## Binary Treatment Example
@@ -58,7 +65,7 @@ r.check <- random_check(W_real = df$w_real, #real treatment assignment vector
                         W_sim  = df$w_sim, #simulated vector, comment out this argument to use permutated real assignment vector instead 
                         X      = subset(df,select = -c(y,w_real,w_sim)) #matrix of pretreatment covariates (or any covariates that SHOULD NOT be related to the assignment process/mechanism
              ); r.check$plot
-#> Simulated Assignemnt Vector Provided, Null Distribution Generated Using Simulated Treatment Assignment.
+#> Simulated Assignment Vector Provided, Null Distribution Generated Using Simulated Treatment Assignment.
 #> 
 #> 
 #> Simple Count Table(s)

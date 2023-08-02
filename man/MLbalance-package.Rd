@@ -11,7 +11,7 @@ This package implements a novel machine learning balance test, the balance permu
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://cetialphafive.github.io/MLbalance/}
+  \item \url{https://github.com/samjfuller/MLbalance}
 }
 
 }

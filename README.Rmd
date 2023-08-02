@@ -14,12 +14,24 @@ knitr::opts_chunk$set(
 # MLbalance (alpha version) 
 
 ```{r, echo=FALSE, out.width="25%"}
-knitr::include_graphics("https://github.com/CetiAlphaFive/MLbalance/blob/master/man/figures/mlbalance_sticker.png")
+knitr::include_graphics("https://github.com/samjfuller/MLbalance/blob/master/man/figures/mlbalance_sticker.png")
 ```
 
 MLbalance implements a novel machine learning balance test, the balance permutation test, for experiments with binary, multiarm, and continuous treatments. The purpose of this test is to detect failures of random assignment and imbalance across treatment arms. For more detail, see Rametta and Fuller (2023). This package is in alpha, any recommendations or comments welcome in the issues section.  
 
 ## Installation
+
+Stable version is be available on Github here: 
+
+``` r 
+devtools::install_github("samjfuller/MLbalance)
+# OR 
+# install.packages("remotes)
+remotes::install_github("samjfuller/MLbalance")
+# OR 
+# install.packages("pak")
+pak::pak("samjfuller/MLbalance")
+```
 
 You can install the development version of MLbalance from [GitHub](https://github.com/CetiAlphaFive/MLbalance) with:
 
@@ -32,12 +44,6 @@ remotes::install_github("CetiAlphaFive/MLbalance")
 # OR 
 # install.packages("pak")
 pak::pak("CetiAlphaFive/MLbalance")
-```
-
-Future stable versions will be available on CRAN and also on Github here: 
-
-``` r 
-devtools::install_github("samjfuller/MLbalance)
 ```
 
 ## Binary Treatment Example 
