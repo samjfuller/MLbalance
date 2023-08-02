@@ -1,7 +1,5 @@
 
-# MLbalance (alpha version)
-
-<img src="https://github.com/samjfuller/MLbalance/blob/master/man/figures/mlbalance_sticker.png" width="25%" />
+# MLbalance (alpha version) <a href='https://github.com/samjfuller/MLbalance/blob/master/man/figures/mlbalance_sticker.png'><img src='man/figures/mlbalance_sticker.png' align="right" height="139" /></a>
 
 MLbalance implements a novel machine learning balance test, the balance
 permutation test, for experiments with binary, multiarm, and continuous
