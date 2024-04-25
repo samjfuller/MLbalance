@@ -13,9 +13,9 @@ or comments welcome in the issues section.
 Stable version is be available on Github here:
 
 ``` r
-devtools::install_github("samjfuller/MLbalance)
+devtools::install_github("samjfuller/MLbalance")
 # OR 
-# install.packages("remotes)
+# install.packages("remotes")
 remotes::install_github("samjfuller/MLbalance")
 # OR 
 # install.packages("pak")
@@ -29,7 +29,7 @@ You can install the development version of MLbalance from
 # install.packages("devtools")
 devtools::install_github("CetiAlphaFive/MLbalance")
 # OR 
-# install.packages("remotes)
+# install.packages("remotes")
 remotes::install_github("CetiAlphaFive/MLbalance")
 # OR 
 # install.packages("pak")
