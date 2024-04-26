@@ -5,7 +5,7 @@ MLbalance implements a novel machine learning balance test, the balance
 permutation test, for experiments with binary, multiarm, and continuous
 treatments. The purpose of this test is to detect failures of random
 assignment and imbalance across treatment arms. For more detail, see
-Rametta and Fuller (2023). This package is in alpha, any recommendations
+[Rametta and Fuller (2023)](https://osf.io/xcwt9). This package is in alpha, any recommendations
 or comments welcome in the issues section.
 
 ## Installation
@@ -85,7 +85,7 @@ r.check <- random_check(W_real = df$w_real, #real treatment assignment vector
 #> Check diff.var.result in saved output for detailed test result.
 ```
 
-<img src="man/figures/README-example-1.png" width="100%" />
+<img src="man/figures/README-example-1.png" width="75%" />
 
 ``` r
 # to see variables important for predicting assignment, check r.check$imp.predictors 
